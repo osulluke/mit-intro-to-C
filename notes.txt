@@ -1,0 +1,9 @@
+This lesson focused on some of the basic compiler options; needless to say, it is much higher quality than what I recieved from PCC. Already, I'm able to use multiple files in the compiler chain, including header files, as well as additional options such as #ifdef flags to choose whether or not to include certain parts of code in the compilation process.
+
+-c flag (gcc -c fib.c rev.c fibrev.c) will produce the object files
+-E flag (gcc -E xyz) will execute pre-processing of the files
+-o flag (gcc -o xyz) is what I'm used to, and will link the files generating an executable.
+
+#ifdef INCLUDETHIS
+	this sequence will allow certain code to be selected for inclusion in a program. you can select it with the addition of a flag in the compliation sequence (gcc -DINCLUDETHIS -o x.c y.c z.c)
+#endif
