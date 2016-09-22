@@ -7,3 +7,5 @@ This lesson focused on some of the basic compiler options; needless to say, it i
 #ifdef INCLUDETHIS
 	this sequence will allow certain code to be selected for inclusion in a program. you can select it with the addition of a flag in the compliation sequence (gcc -DINCLUDETHIS -o x.c y.c z.c)
 #endif
+
+Lesson 2 focused on the control constructs used for looping and testing statements. i.e. if, else, else if, switch, case, do/while, while, and for. Nothing was super new here, but there was a cool exercise regarding coming up with 7 different ways to produce some odd numbers. Was a good exercise to show the connection between the different language syntax and showed the convinience of some of the 'shorthand' methods for testing values and controlling a program.
