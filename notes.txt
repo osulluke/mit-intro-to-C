@@ -9,3 +9,10 @@ This lesson focused on some of the basic compiler options; needless to say, it i
 #endif
 
 Lesson 2 focused on the control constructs used for looping and testing statements. i.e. if, else, else if, switch, case, do/while, while, and for. Nothing was super new here, but there was a cool exercise regarding coming up with 7 different ways to produce some odd numbers. Was a good exercise to show the connection between the different language syntax and showed the convinience of some of the 'shorthand' methods for testing values and controlling a program.
+
+Lesson 3: Memory management (stacks/pointers) - 
+
+	- Main purpose of the call stack is to keep track of where a subroutine should return control to after it finishes its action.
+	- When a program calls a function, it pushes a return address onto the stack for the subroutine to use as its 'return address' after it finishes its job. Pushing addresses is called 'winding'...removing them is called 'unwinding'.
+
+	- Using malloc returns a void pointer, meaning it is a pointer to memory space that can then be used for any type of data...this means that it will eventually have to be "cast" to whatever data-type is being used in that memory space.
