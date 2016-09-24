@@ -9,14 +9,14 @@ void sort(int* A, int n){
 	int j;
 
 	for(i=1; i<n; i++){
-		tmp = A[i];
+		tmp = *(A+i);
 		j=i-1;
 		//For each element in A, search for where it belong in the subarray preceeding it's current location
-		while(tmp<A[j] && j>=0){
-			A[j+1]=A[j];
+		while(tmp < *(A+j) && j>=0){
+			*(A+j+1)=*(A+j);
 			j-=1;
 		}
-		A[j+1]=tmp;
+		*(A+j+1)=tmp;
 	}
 }
 
@@ -35,14 +35,14 @@ int main(){
 	//Assign each element in the array a random number between 0 and 31,999
 	int i;
 	for (i=0; i<n; i++){
-		array[i]=rand()%32000; //This line assigns random numbers
+		*(array+i)=rand()%32000; //This line assigns random numbers
 	}
 
 	//Prints out the elements of the unsorted array
 	int x;
 	printf("The unsorted array is: \n");
 	for (x=0; x<n; x++){
-		printf("%d ",array[x]);
+		printf("%d ",*(array+x));
 	}
 	printf("\n");
 	
@@ -52,7 +52,7 @@ int main(){
 	//Print out the elements of the now (supposedly) sorted array.
 	printf("The sorted array is: \n");
 	for (x=0; x<n; x++){
-		printf("%d ",array[x]);
+		printf("%d ",*(array+x));
 	}
 	printf("\n");
 	return 0;
