@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 //Sort an array A using insertion sort. Notice it is to be passed by reference.
-void sort(/* what's the argument data type?*/ A, int n){
+void sort(int* A, int n){
 	int tmp;
 	int i;
 	int j;
@@ -30,7 +30,7 @@ int main(){
 	scanf("%d",&n);
 
 	//Array array. Change this to become a dynamic array through malloc.
-	int array[n];
+	int * array = (int *) malloc(n*sizeof(int));
 
 	//Assign each element in the array a random number between 0 and 31,999
 	int i;
@@ -40,7 +40,7 @@ int main(){
 
 	//Prints out the elements of the unsorted array
 	int x;
-	printf("The unsorted array is: ");
+	printf("The unsorted array is: \n");
 	for (x=0; x<n; x++){
 		printf("%d ",array[x]);
 	}
@@ -50,7 +50,7 @@ int main(){
 	sort(array,n);
 	
 	//Print out the elements of the now (supposedly) sorted array.
-	printf("The sorted array is: ");
+	printf("The sorted array is: \n");
 	for (x=0; x<n; x++){
 		printf("%d ",array[x]);
 	}

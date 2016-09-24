@@ -16,3 +16,5 @@ Lesson 3: Memory management (stacks/pointers) -
 	- When a program calls a function, it pushes a return address onto the stack for the subroutine to use as its 'return address' after it finishes its job. Pushing addresses is called 'winding'...removing them is called 'unwinding'.
 
 	- Using malloc returns a void pointer, meaning it is a pointer to memory space that can then be used for any type of data...this means that it will eventually have to be "cast" to whatever data-type is being used in that memory space.
+
+	- These two code changes in sort.c make it so the sort algorithm takes a pointer to an integer array, and then uses malloc to create a memorty space that is large enough to hold the array of numbers. It also fixes the 'printing' of the program and makes it a little prettier.
