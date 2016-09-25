@@ -25,4 +25,4 @@ Lesson 4:
 
 	- Valgrind can pick up on memory leaks, use of uninitialized variables, and though the lecture states that it won't check the bounds of statically allocated arrays, it has been producing an error that makes me think these notes from 2012 have been OBE by newer developments in the Valgrind program.
 
-	
+	- There is some challenge in understanding the "->" syntax going on. I think it has to do with my use of an array vs the example's use of a single character...this is why I'm having to use a strcpy function to update the values, vs just being able to directly assign them with the '=' operator.

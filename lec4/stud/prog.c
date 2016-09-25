@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 #include "stud.h"
 
 void main(void){
@@ -13,6 +14,16 @@ void main(void){
 
 	print_student(joe);
 	print_student(sally);
+	print_student(luke);
+
+	struct student * tommy = malloc(sizeof(struct student));
+	strcpy(tommy->name,"Thomas O'Sullivan");
+	tommy->age = 28;
+	print_student(*tommy);
+	free(tommy);
+
+	strcpy(luke.name,"Katie O'Sullivan");
+	luke.age = 33;
 	print_student(luke);
 
 	return;
