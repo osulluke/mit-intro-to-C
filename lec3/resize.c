@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <time.h>
 
 
 int main(){
@@ -19,10 +20,10 @@ int main(){
 		*(a1+i)=100;
 		
 		//Print each element out (to make sure things look right)
-		if(i=0) printf("a1 array: \n");
-		printf("%d ",*(a+i) );
-		printf("\na1 memory addres: %u\n", a1);
+		if(i==0) printf("a1 array: \n");
+		printf("%d ",*(a1+i) );
 	}
+	printf("\na1 memory address: %x\n", a1);
 
 	//User specifies the new array size, stored in variable n2.
 	printf("\nEnter new array size: ");
@@ -36,19 +37,20 @@ int main(){
 	if (n2 > n1){
 
 		for(int i=n1; i<n2; i++){
-			*(a+i) = 0;
+			*(a1+i) = 0;
 		}
 	}
 
 	for(i=0; i<n2;i++){
-		if(i=0) printf("a1 array: \n");
+		if(i==0) printf("a1 array: \n");
 		//Print each element out (to make sure things look right)
 		printf("%d ",*(a1+i));
 	}
 	printf("\n");
-	printf("\na1 memory addres: %u\n", a1);
+	printf("\na1 memory address: %x\n", a1);
 	
 	//Done with array now, done with program :D
+	free(a1);
 	
 	return 0;
 }
