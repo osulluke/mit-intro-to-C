@@ -21,4 +21,8 @@ Lesson 3: Memory management (stacks/pointers/arrays/memory management) -
 
 	- Finalized resize.c. I included the file by itself, before my code changes, one, to make better use of 'git', and two so I could actually see the changes I made...using git :) lolz. On to lecture 4...
 
-Lesson 4:  
+Lesson 4:
+
+	- Valgrind can pick up on memory leaks, use of uninitialized variables, and though the lecture states that it won't check the bounds of statically allocated arrays, it has been producing an error that makes me think these notes from 2012 have been OBE by newer developments in the Valgrind program.
+
+	
