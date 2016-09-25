@@ -10,7 +10,7 @@ This lesson focused on some of the basic compiler options; needless to say, it i
 
 Lesson 2 focused on the control constructs used for looping and testing statements. i.e. if, else, else if, switch, case, do/while, while, and for. Nothing was super new here, but there was a cool exercise regarding coming up with 7 different ways to produce some odd numbers. Was a good exercise to show the connection between the different language syntax and showed the convinience of some of the 'shorthand' methods for testing values and controlling a program.
 
-Lesson 3: Memory management (stacks/pointers) - 
+Lesson 3: Memory management (stacks/pointers/arrays/memory management) - 
 
 	- Main purpose of the call stack is to keep track of where a subroutine should return control to after it finishes its action.
 	- When a program calls a function, it pushes a return address onto the stack for the subroutine to use as its 'return address' after it finishes its job. Pushing addresses is called 'winding'...removing them is called 'unwinding'.
@@ -18,3 +18,7 @@ Lesson 3: Memory management (stacks/pointers) -
 	- Using malloc returns a void pointer, meaning it is a pointer to memory space that can then be used for any type of data...this means that it will eventually have to be "cast" to whatever data-type is being used in that memory space.
 
 	- These two code changes in sort.c make it so the sort algorithm takes a pointer to an integer array, and then uses malloc to create a memorty space that is large enough to hold the array of numbers. It also fixes the 'printing' of the program and makes it a little prettier.
+
+	- Finalized resize.c. I included the file by itself, before my code changes, one, to make better use of 'git', and two so I could actually see the changes I made...using git :) lolz. On to lecture 4...
+
+Lesson 4:  
